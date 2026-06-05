@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>John Hamm Hulex</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:"Segoe UI",Arial,sans-serif;
+    line-height:1.7;
+    background:#f4f7fb;
+    color:#222;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* DARK MODE */
+body.dark-mode{
+    background:#0f172a;
+    color:#e5e7eb;
+}
+
+body.dark-mode .card{
+    background:#1e293b;
+    color:#e5e7eb;
+}
+
+body.dark-mode nav{
+    background:#0b1220;
+}
+
+body.dark-mode .section-title{
+    color:#e5e7eb;
+    border-bottom:4px solid #d4a017;
+}
+
+/* HEADER */
+header{
+    background:
+    linear-gradient(rgba(0,25,60,.85),rgba(0,25,60,.9)),
+    url("https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&fit=crop&w=1800&q=80");
+    background-size:cover;
+    background-position:center;
+    color:white;
+    text-align:center;
+    padding:120px 20px;
+}
+
+header h1{
+    font-size:3rem;
+    margin-bottom:10px;
+}
+
+header p{
+    font-size:1.1rem;
+}
+
+.tagline{
+    margin-top:15px;
+    color:#f0d27a;
+    font-style:italic;
+}
+
+/* CONTAINER */
+.container{
+    max-width:1100px;
+    margin:auto;
+    padding:60px 20px;
+}
+
+/* SECTION TITLE */
+.section-title{
+    color:#002855;
+    margin-bottom:25px;
+    border-bottom:4px solid #d4a017;
+    display:inline-block;
+    padding-bottom:5px;
+}
+
+/* CARDS + ANIMATION */
+.card{
+    background:white;
+    border-radius:12px;
+    padding:25px;
+    margin-bottom:25px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.08);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover{
+    transform: translateY(-6px);
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* LISTS */
+ul{
+    padding-left:25px;
+}
+
+/* LINKS */
+a{
+    color:#002855;
+    text-decoration:none;
+    font-weight:600;
+}
+
+a:hover{
+    text-decoration:underline;
+}
+
+/* DARK MODE LINKS */
+body.dark-mode a{
+    color:#93c5fd;
+}
+
+/* BUTTON */
+.toggle-btn{
+    position:fixed;
+    top:20px;
+    right:20px;
+    background:#001f3f;
+    color:white;
+    border:none;
+    padding:10px 15px;
+    border-radius:8px;
+    cursor:pointer;
+    z-index:1000;
+}
+
+.toggle-btn:hover{
+    background:#003366;
+}
+
+/* FOOTER */
+footer{
+    background:#001f3f;
+    color:white;
+    text-align:center;
+    padding:30px;
+    margin-top:40px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- DARK MODE BUTTON -->
+<button class="toggle-btn" onclick="document.body.classList.toggle('dark-mode')">
+Toggle Dark Mode
+</button>
+
+<header>
+
+<h1>John Hamm Hulex</h1>
+
+<p>
+Research Director &amp; Principal Investigator at Centre for Seismological Phenomena (CSP)
+</p>
+
+<p class="tagline">
+Numerical Algorithms • Mathematical Logic • Group Theory • Quantum Gravity
+</p>
+
+</header>
+
+<div class="container">
+
+<!-- PROFILE -->
+<section>
+
+<h2 class="section-title">Profile</h2>
+
+<div class="card">
+
+<p>
+Research experience in computational modeling, numerical simulation,
+and scientific computing, involving both physics-based and data-driven
+approaches. Work includes the development and application of numerical
+methods, Physics-Informed Neural Networks (PINNs), and computational
+frameworks for solving complex problems in classical and theoretical
+physics. Research interests encompass the mathematical foundations of
+artificial intelligence, symmetry transformations, algebraic structures,
+and geometric group theory, together with their applications to physical
+modeling. Current investigations include quantum spacetime, discrete
+spacetime models, gravitational quantization, and computational
+approaches to fundamental problems in quantum gravity and mathematical
+physics.
+</p>
+
+</div>
+
+</section>
+
+<!-- AFFILIATION -->
+<section>
+
+<h2 class="section-title">Affiliation</h2>
+
+<div class="card">
+
+<p>
+1. Centre for Seismological Phenomena (CSP), University of Khartoum, Sudan<br>
+2. China University of Petroleum (East China), Qingdao, China<br>
+3. Nottingham College, UK
+</p>
+
+</div>
+
+</section>
+
+<!-- EDUCATION -->
+<section>
+
+<h2 class="section-title">Education</h2>
+
+<div class="card">
+
+<ul>
+<li>B.Sc. in Geophysics / Geology</li>
+<li>M.Sc. &amp; PhD in Computational Physics and Engineering Physics</li>
+<li>Numerical Methods, Scientific Computing, PINNs</li>
+</ul>
+
+</div>
+
+</section>
+
+<!-- RESEARCH -->
+<section>
+
+<h2 class="section-title">Research Directions</h2>
+
+<div class="card">
+
+<ul>
+<li>Numerical Algorithms</li>
+<li>Mathematical Logic</li>
+<li>Group Theory</li>
+<li>Quantum Gravity</li>
+<li>Computational Physics</li>
+<li>Scientific Computing</li>
+<li>Physics-Informed Neural Networks (PINNs)</li>
+<li>Computational Geophysics</li>
+</ul>
+
+</div>
+
+</section>
+
+<!-- PUBLICATIONS -->
+<section>
+
+<h2 class="section-title">Publications</h2>
+
+<div class="card">
+
+<ul>
+<li>Fractional Schrödinger–Poisson Operator Splitting Method</li>
+<li>PINNs-Based Seismic Wavefield Simulation</li>
+<li>τ-Domain Wavefield Modelling</li>
+<li>Nonlinear Viscoelastic Flow FEM Models</li>
+</ul>
+
+</div>
+
+</section>
+
+<!-- PROJECTS -->
+<section>
+
+<h2 class="section-title">Projects</h2>
+
+<div class="card">
+
+<ul>
+<li>Finite-Element Fluid Systems</li>
+<li>PINN Seismic Simulation</li>
+<li>Fractional Quantum Solvers</li>
+</ul>
+
+</div>
+
+</section>
+
+<!-- IP -->
+<section>
+
+<h2 class="section-title">Intellectual Property</h2>
+
+<div class="card">
+
+<p>
+Gravity–Seismic Imaging Method (UK IPO — Under Review)
+</p>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+<section>
+
+<h2 class="section-title">Contact</h2>
+
+<div class="card">
+
+<p>
+Email: john-hamm_hulex@proton.me<br>
+ORCID: 0009-0006-1755-129X
+</p>
+
+<p style="margin-top:15px;">
+<strong>Research Laboratory</strong><br>
+<a href="https://jaguar101-jr.github.io/csp-lab/" target="_blank" rel="noopener noreferrer">
+Computational Science & Physics Lab (CSP Lab)
+</a>
+</p>
+
+</div>
+
+</section>
+
+</div>
+
+<footer>
+
+<p>© 2026 John Hamm Hulex</p>
+
+</footer>
+
+</body>
+</html>
